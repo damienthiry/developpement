@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel='stylesheet' type='text/css' href="calcu.css">
+    <meta charset="UTF-8">
+    <script src="calc.js"></script>
+    <title>
+        Calculatrice
+    </title>
+</head>
+
+<body>
+    <div id="cadre">
+        <div id="output">0</div>
+        <div style="padding-top: 0px;">
+            <div style="display: flex;">
+                <button style="color: red;" type="button" value='CE' onclick='Reset(this)'>CE</button>
+                <button style="color: red;" type="button" value='C' onclick='ResetBis(this)'>C</button>
+                <button style="color: red;" type="button" value='←' onclick='Retour(this)'>←</button>
+                <button type="button" value='/' onclick='Operator(this)'>/</button>
+            </div>
+            <div style="display: flex;">
+                <button type="button" value='7' onclick='Valeur(this)'>7</button>
+                <button type="button" value='8' onclick='Valeur(this)'>8</button>
+                <button type="button" value='9' onclick='Valeur(this)'>9</button>
+                <button type="button" value='*' onclick='Operator(this)'>*</button>
+            </div>
+            <div style="display: flex;">
+                <button type="button" value='4' onclick='Valeur(this)'>4</button>
+                <button type="button" value='5' onclick='Valeur(this)'>5</button>
+                <button type="button" value='6' onclick='Valeur(this)'>6</button>
+                <button type="button" value='-' onclick='Operator(this)'>-</button>
+            </div>
+            <div style="display: flex;">
+                <button type="button" value='1' onclick='Valeur(this)'>1</button>
+                <button type="button" value='2' onclick='Valeur(this)'>2</button>
+                <button type="button" value='3' onclick='Valeur(this)'>3</button>
+                <button type="button" value='+' onclick='Operator(this)'>+</button>
+            </div>
+            <div style="display: flex;">
+                <button type="button" value='+/-' onclick='Inverser(this)'>+/-</button>
+                <button type="button" value='0' onclick='Valeur(this)'>0</button>
+                <button type="button" value='.' onclick='Dot(this)'>.</button>
+                <button type="button" value='=' onclick='Resultat(this)'>=</button>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
